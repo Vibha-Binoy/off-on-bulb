@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>On and Off bulb</title>
+</head>
+<body onload="Welcome to My Website">
+	<img id="abc" src="On.png" onclick="changeImage()">
+	<script type="text/javascript" language="javascript">
+		function changeImage(){
+			var a=document.getElementById("abc");
+			if(a.src.match("Off")){
+				a.src="On.png";
+			}
+			else{
+				a.src="Off.png";
+			}
+		}
+    </script>
+</body>
+</html>
